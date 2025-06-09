@@ -2,7 +2,7 @@
 AutoBudgetViewer - An interactive interface to monitor and visualize personal household income and expenses over time.  
 
 ### Devs: [Lior Gazit](https://github.com/LiorGazit), and GPT4.1  
-*Hours spent in total on this project so far: `2 hours`  
+*Hours spent in total on this project so far: `2.5 hours`  
 
 ## (This README is to be addressed later)
 
