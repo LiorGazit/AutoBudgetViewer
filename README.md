@@ -1,24 +1,25 @@
 # AutoBudgetViewer
-AutoBudgetViewer - An interactive interface to monitor and visualize personal household income and expenses over time
-*Hours spent in total on this project so far: `2 hours`.  
+AutoBudgetViewer - An interactive interface to monitor and visualize personal household income and expenses over time.  
+
+### Devs: [Lior Gazit](https://github.com/LiorGazit), and GPT4.1  
+*Hours spent in total on this project so far: `2 hours`  
 
 ## (This README is to be addressed later)
 
-
-(
-    My comments for things to have here:  
-    1. The full documentation
-    2. Setting up the venv
-    3. Setting up the ability to run the streamlit command in powershell
-    4. 
-)
+    My comments for things to have here:   
+    1. The full documentation  
+    2. Setting up the venv  
+    3. Setting up the ability to run the streamlit command in powershell     
+  
 
 
 
-## AutoBudgetView – Codebase Structure
+## AutoBudgetView – Codebase Structure  
 
-AutoBudgetView/
-│
+AutoBudgetView/  
+│  
+├── CHANGELOG.md        # High-level release notes — top-level, visible to all contributors  
+├── devlog.md           # Developer diary/log — top-level, close to where day-to-day dev happens  
 ├── app.py                       # Main Streamlit entry point  
 ├── requirements.txt             # Python dependencies  
 ├── config/  
@@ -26,7 +27,7 @@ AutoBudgetView/
 ├── data/  
 │   └── Main AutoBudget File (mocked).xlsx  # (Git-ignored, but this is the input file location)  
 ├── autobudget/  
-│   ├── __init__.py  
+│   ├── \_\_init\_\_.py  
 │   ├── loader.py                # Excel loading, validation, and parsing logic  
 │   ├── config_loader.py         # Config file reader and validator  
 │   ├── state.py                 # (Optional) Session state handling for Streamlit  
