@@ -193,7 +193,9 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# My adds:
 /data/
 *.pyc
 __pycache__/
 .env
+/config/tabs_config.json
