@@ -1,5 +1,15 @@
 # Development Log
 
+## 2025-07-20
+- Implemented smoothing feature using a causal moving average.
+  - Users enter integer M (M ≥ 1) to control window size.
+  - When M = 1, original data is shown without smoothing.
+  - For M > 1, graphs apply a causal average: mean of values from t-(M-1) to t.
+  - All curves, including "Sum of Categories", are smoothed accordingly.
+  - Graph titles dynamically reflect the current M setting.
+- Creating branch `staging` for accommodating for the differences between the remote `main` and my local `main`.  
+
+
 ## 2025-06-08
 - Committed the Excel file used for prototyping (`Main AutoBudget File (mocked).xlsx`) to the repo despite `.gitignore`, for transparency and reproducibility.
 - Created and committed `CHANGELOG.md` and `devlog.md` to track development milestones and ongoing work.

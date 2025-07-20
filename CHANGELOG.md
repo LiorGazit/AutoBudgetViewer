@@ -11,6 +11,10 @@
 - Layout improvements (e.g., checkbox positioning, minimized category list view).
 
 ## [Unreleased]
-### Added
 - `Main AutoBudget File (mocked).xlsx` committed once to the repo for public reference.
 - `CHANGELOG.md` and `devlog.md` files initialized for structured development tracking.
+
+### Added
+- Smoothing feature with causal moving average on all plotted lines.
+  - Users can input window size M (M ≥ 1) below each graph.
+  - Graph titles update to reflect smoothing status.

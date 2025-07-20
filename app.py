@@ -66,16 +66,23 @@ for tab_name, tab_obj in zip(tabs, tab_objs):
             st.session_state[state_key] = selected
 
         with col_right:
-            # Visualization
-            plot_time_series(df, sorted(list(st.session_state[state_key])),
-                            title=f"{tab_name} – Time Series")
+            # --- Visualization controls ---
+            ma_key = f"moving_avg_{tab_name}"
+            default_ma = 1
+            M = st.number_input(
+                "Moving average window (M months):",
+                min_value=1, max_value=len(df.columns), value=default_ma, step=1,
+                key=ma_key, help="Use M=1 for no smoothing; higher for more smoothing."
+            )
 
+            plot_time_series(
+                df, 
+                sorted(list(st.session_state[state_key])),
+                title=f"{tab_name} – Time Series",
+                moving_avg=M
+            )
             # Minimal, collapsed "Selected categories" below the chart
             with st.expander("Show selected categories", expanded=False):
-                st.caption(
-                    "For validation only: currently selected categories in this tab:"
-                )
-                st.write(
-                    ", ".join(sorted(list(st.session_state[state_key]))) or "(none selected)"
-                )
+                st.caption("For validation only: currently selected categories in this tab:")
+                st.write(", ".join(sorted(list(st.session_state[state_key]))) or "(none selected)")
 
