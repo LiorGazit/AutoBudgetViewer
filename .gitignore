@@ -198,4 +198,4 @@ cython_debug/
 *.pyc
 __pycache__/
 .env
-/config/tabs_config.json
+config/tabs_config.json
