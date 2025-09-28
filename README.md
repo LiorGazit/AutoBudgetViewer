@@ -2,7 +2,7 @@
 AutoBudgetViewer - An interactive interface to monitor and visualize personal household income and expenses over time.  
 
 ### Devs: [Lior Gazit](https://github.com/LiorGazit), and GPT4.1  
-*Hours spent in total on this project so far: `3 hours`  
+*Hours spent in total on this project so far: `3.5 hours`  
 
 ## (This README is to be addressed later)
 
@@ -11,32 +11,33 @@ AutoBudgetViewer - An interactive interface to monitor and visualize personal ho
     2. Setting up the venv  
     3. Setting up the ability to run the streamlit command in powershell     
   
-
-
-
 ## AutoBudgetView – Codebase Structure  
 
 AutoBudgetView/  
-│  
-├── CHANGELOG.md        # High-level release notes — top-level, visible to all contributors  
-├── devlog.md           # Developer diary/log — top-level, close to where day-to-day dev happens  
-├── app.py                       # Main Streamlit entry point  
-├── requirements.txt             # Python dependencies  
-├── config/  
-│   └── tabs_config.json         # Tab/category config file  
-├── data/  
-│   └── Main AutoBudget File (mocked).xlsx  # (Git-ignored, but this is the input file location)  
 ├── autobudget/  
 │   ├── \_\_init\_\_.py  
-│   ├── loader.py                # Excel loading, validation, and parsing logic  
 │   ├── config_loader.py         # Config file reader and validator  
+│   ├── loader.py                # Excel loading, validation, and parsing logic  
 │   ├── state.py                 # (Optional) Session state handling for Streamlit  
 │   └── viz.py                   # Plotting and visualization functions  
+│  
+├── config/  
+│   └── tabs_config.json         # Tab/category config file  
+│  
+├── data/  
+│   └── Main AutoBudget File (mocked).xlsx  # (Git-ignored, but this is the input file location)  
+│  
 ├── tests/  
-│   ├── test_loader.py  
 │   ├── test_config_loader.py  
+│   ├── test_loader.py  
 │   └── test_viz.py  
-└── .gitignore  
+│  
+├── .gitignore  
+├── app.py                       # Main Streamlit entry point   
+├── CHANGELOG.md        # High-level release notes — top-level, visible to all contributors 
+├── devlog.md           # Developer diary/log — top-level, close to where day-to-day dev happens  
+├── README.md  
+└── requirements.txt             # Python dependencies  
 
 Key Points
 
